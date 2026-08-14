@@ -6,7 +6,7 @@ const nav=[['Home','/'],['About','/about'],['Courses','/courses'],['Exam Prep','
 
 export function Header(){
   const [open,setOpen]=useState(false); const loc=useLocation();
-  useEffect(()=>setOpen(false),[loc.pathname])
+  useEffect(()=>{setOpen(false)},[loc.pathname])
   return <header className="sticky top-0 z-50 border-b border-line bg-cream/95 backdrop-blur">
     <div className="container-site flex h-16 items-center justify-between gap-5">
       <Link to="/" className="font-display text-xl font-semibold tracking-tight">Manila French Tutor</Link>
